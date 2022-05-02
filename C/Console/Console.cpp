@@ -1,9 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
 void TypeSizes();
 void TypeDef();
+void EnumTypes();
+void ConstKeyword();
 
 int main()
 {
@@ -11,6 +11,8 @@ int main()
 
     TypeSizes();
     TypeDef();
+    EnumTypes();
+    ConstKeyword();
 
     auto key = std::getchar();
 
@@ -19,22 +21,22 @@ int main()
 
 void title(const char* name)
 {
-    std::cout << "====================================" << endl << endl;
-    std::cout << name << endl << endl;
+    std::cout << "====================================" << std::endl << std::endl;
+    std::cout << name << std::endl << std::endl;
 }
 
 void TypeSizes()
 {
-    title("TypeSizes");
+    title("Type Sizes");
 
-    std::cout << "Size of char : " << sizeof(char) << endl;
-    std::cout << "Size of int : " << sizeof(int) << endl;
-    std::cout << "Size of short int : " << sizeof(short int) << endl;
-    std::cout << "Size of long int : " << sizeof(long int) << endl;
-    std::cout << "Size of float : " << sizeof(float) << endl;
-    std::cout << "Size of double : " << sizeof(double) << endl;
-    std::cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
-    std::cout << endl;
+    std::cout << "Size of char : " << sizeof(char) << std::endl;
+    std::cout << "Size of int : " << sizeof(int) << std::endl;
+    std::cout << "Size of short int : " << sizeof(short int) << std::endl;
+    std::cout << "Size of long int : " << sizeof(long int) << std::endl;
+    std::cout << "Size of float : " << sizeof(float) << std::endl;
+    std::cout << "Size of double : " << sizeof(double) << std::endl;
+    std::cout << "Size of wchar_t : " << sizeof(wchar_t) << std::endl;
+    std::cout << std::endl;
 }
 
 void TypeDef()
@@ -43,6 +45,31 @@ void TypeDef()
 
     typedef int feet;
     feet distance = 20;
-    std::cout << "distance: " << distance << " feets" << endl;
-    std::cout << endl;
+    std::cout << "distance: " << distance << " feets" << std::endl;
+    std::cout << std::endl;
+}
+
+void EnumTypes()
+{
+    title("Enum Types");
+    
+    enum color { red, green, blue = 5 } c;
+    c = blue;
+
+    std::cout << "color = " << c << std::endl;
+    std::cout << std::endl;
+}
+
+void ConstKeyword()
+{
+    title("Const Keyword");
+
+    const int  LENGTH = 10;
+    const int  WIDTH = 5;
+    const char NEWLINE = '\n';
+
+    int area = LENGTH * WIDTH;
+
+    std::cout << area;
+    std::cout << NEWLINE;
 }
