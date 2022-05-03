@@ -6,6 +6,9 @@ using std::setw;
 
 #include "005_Utils.h"
 
+// https://www.learncpp.com/cpp-tutorial/arrays-part-i/
+// https://www.learncpp.com/cpp-tutorial/arrays-part-ii/
+
 void ArrayType()
 {
     Title("Array type");
