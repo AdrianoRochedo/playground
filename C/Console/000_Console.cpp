@@ -1,0 +1,23 @@
+#include <iostream>
+
+#include "005_Utils.h"
+#include "010_Types.h"
+#include "020_Files.h"
+#include "030_Math.h"
+
+int main()
+{
+    std::cout << "Hello Adriano\n\n";
+
+    TypeSizes();
+    TypeDef();
+    EnumTypes();
+    ConstKeyword();
+    Files();
+    Math();
+    Random();
+
+    auto key = std::getchar();
+
+    return key;
+}

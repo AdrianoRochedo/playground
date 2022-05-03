@@ -139,10 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="000_Console.cpp" />
+    <ClCompile Include="010_Types.cpp" />
+    <ClCompile Include="020_Files.cpp" />
+    <ClCompile Include="030_Math.cpp" />
+    <ClCompile Include="005_Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="conteuto_texto.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="005_Utils.h" />
+    <ClInclude Include="010_Types.h" />
+    <ClInclude Include="020_Files.h" />
+    <ClInclude Include="030_Math.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
