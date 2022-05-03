@@ -11,7 +11,7 @@ int main()
 
     TypeSizes();
     TypeDef();
-    EnumTypes();
+    EnumType();
     ConstKeyword();
     Files();
     Math();

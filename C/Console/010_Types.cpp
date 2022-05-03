@@ -27,7 +27,7 @@ void TypeDef()
     std::cout << std::endl;
 }
 
-void EnumTypes()
+void EnumType()
 {
     Title("Enum Types");
     

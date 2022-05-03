@@ -2,5 +2,5 @@
 
 void TypeSizes();
 void TypeDef();
-void EnumTypes();
+void EnumType();
 void ConstKeyword();
