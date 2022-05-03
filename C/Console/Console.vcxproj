@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="000_Console.cpp" />
     <ClCompile Include="010_Types.cpp" />
+    <ClCompile Include="012_ArrayType.cpp" />
     <ClCompile Include="020_Files.cpp" />
     <ClCompile Include="030_Math.cpp" />
     <ClCompile Include="005_Utils.cpp" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="005_Utils.h" />
     <ClInclude Include="010_Types.h" />
+    <ClInclude Include="012_ArrayType.h" />
     <ClInclude Include="020_Files.h" />
     <ClInclude Include="030_Math.h" />
   </ItemGroup>

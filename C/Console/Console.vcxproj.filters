@@ -30,6 +30,9 @@
     <ClCompile Include="005_Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="012_ArrayType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="conteuto_texto.txt">
@@ -47,6 +50,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="005_Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="012_ArrayType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

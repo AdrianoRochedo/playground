@@ -2,6 +2,7 @@
 
 #include "005_Utils.h"
 #include "010_Types.h"
+#include "012_ArrayType.h"
 #include "020_Files.h"
 #include "030_Math.h"
 
@@ -13,7 +14,12 @@ int main()
     TypeDef();
     EnumType();
     ConstKeyword();
+
+    ArrayType();
+    PassArrayDemo();
+
     Files();
+    
     Math();
     Random();
 
