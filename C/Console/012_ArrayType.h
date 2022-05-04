@@ -1,7 +1,7 @@
 #pragma once
 
 void ArrayType();
-void PassArray();
+void ArrayToFunction();
 void ArrayWithEnums();
 void ArraySize();
 void ArraySort();

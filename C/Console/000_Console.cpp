@@ -16,11 +16,15 @@ int main()
     ConstKeyword();
 
     ArrayType();
-    PassArray();
+    ArrayToFunction();
     ArrayWithEnums();
     ArraySize();
     ArraySort();
     ArrayWithVector();
+
+    // String
+    // Struct
+    // Class
 
     //Files();
     
