@@ -16,9 +16,12 @@ int main()
     ConstKeyword();
 
     ArrayType();
-    PassArrayDemo();
+    PassArray();
+    ArrayWithEnums();
+    ArraySize();
+    ArraySort();
 
-    Files();
+    //Files();
     
     Math();
     Random();

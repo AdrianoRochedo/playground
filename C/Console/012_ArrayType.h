@@ -1,4 +1,7 @@
 #pragma once
 
 void ArrayType();
-void PassArrayDemo();
+void PassArray();
+void ArrayWithEnums();
+void ArraySize();
+void ArraySort();

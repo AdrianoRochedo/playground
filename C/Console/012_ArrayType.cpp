@@ -1,8 +1,11 @@
-#include <iostream>
-using namespace std;
-
 #include <iomanip>
 using std::setw;
+
+#include <iterator> // for std::size
+#include <algorithm> // for std::sort
+
+#include <iostream>
+using namespace std;
 
 #include "005_Utils.h"
 
@@ -46,7 +49,7 @@ void passArray(int prime[5]) // prime is the actual array
     prime[4] = 2;
 }
 
-void PassArrayDemo()
+void PassArray()
 {
     Title("PassArrayDemo");
 
@@ -61,4 +64,105 @@ void PassArrayDemo()
     std::cout << "after passArray: " << prime[0] << " " << prime[1] << " " << prime[2] << " " << prime[3] << " " << prime[4] << '\n';
 
     cout << endl;
+}
+
+// =======================================================================
+
+void ArrayWithEnums()
+{
+    Title("ArrayWithEnums");
+
+    enum StudentNames
+    {
+        kenny,       // 0
+        kyle,        // 1
+        stan,        // 2
+        butters,     // 3
+        cartman,     // 4
+        wendy,       // 5
+        max_students // 6
+    };
+
+    int testScores[StudentNames::max_students] {}; // allocate 6 integers
+    testScores[StudentNames::stan] = 76;
+
+    cout << "testScores[stan] = " << testScores[StudentNames::stan] << endl;
+
+    cout << endl;
+}
+
+// =======================================================================
+
+void printSize(int array[])
+{
+    // std::size nao funciona com parametros tipo array
+    //std::cout << std::size(array) << '\n'; // Error
+}
+
+void ArraySize()
+{
+    Title("ArraySize");
+    int array[]{ 1, 1, 2, 3, 5, 8, 13, 21 };
+    std::cout << std::size(array) << '\n'; // will print the size of the array
+    printSize(array);
+    cout << endl;
+}
+
+// =======================================================================
+
+bool myCompareFunction(int i, int j) 
+{ 
+    return i < j; 
+}
+
+struct myCompareClass 
+{
+    bool operator() (int i, int j) 
+    { 
+        return i > j; 
+    }
+} 
+myCompareObject;
+
+void ArraySort()
+{
+    Title("ArraySort");
+
+    int array[]{ 30, 50, 20, 10, 40 };
+
+    // ---------------------------------------------------------
+
+    std::sort(std::begin(array), std::end(array), std::less<>{}); // default
+
+    for (int i = 0; i < static_cast<int>(std::size(array)); ++i)
+        std::cout << array[i] << ' ';
+
+    cout << endl << endl;
+
+    // ---------------------------------------------------------
+
+    std::sort(std::begin(array), std::end(array), std::greater<>{});
+
+    for (int i=0; i < static_cast<int>(std::size(array)); ++i)
+        std::cout << array[i] << ' ';
+
+    cout << endl << endl;
+
+    // ---------------------------------------------------------
+
+    std::sort(std::begin(array), std::end(array), myCompareFunction);
+
+    for (int i = 0; i < static_cast<int>(std::size(array)); ++i)
+        std::cout << array[i] << ' ';
+
+    cout << endl << endl;
+
+    // ---------------------------------------------------------
+
+    std::sort(std::begin(array), std::end(array), myCompareObject);
+
+    for (int i = 0; i < static_cast<int>(std::size(array)); ++i)
+        std::cout << array[i] << ' ';
+
+    cout << endl << endl;
 }
