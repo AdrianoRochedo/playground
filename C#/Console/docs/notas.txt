@@ -1,5 +1,14 @@
 ﻿documentacao
 
+  MAIN
+
+      https://docs.microsoft.com/en-us/dotnet/csharp/
+
+  CONSOLE
+
+      Console app (console-teleprompter)
+      https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter
+
   WEB
   
       Tutorial: Create a minimal web API with ASP.NET Core
@@ -7,3 +16,20 @@
 
       Call a Web API From a .NET Client (C#)
       https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
+
+      C# HttpClient
+      https://zetcode.com/csharp/httpclient/
+
+      Get and send JSON with HttpClient
+      https://makolyte.com/csharp-get-and-send-json-with-httpclient/
+
+      Different HttpClient Techniques To Consume API Calls In Minimal API
+      https://www.learmoreseekmore.com/2021/12/dotnet6-different-httpclient-techniques-to-consume-thirdparty-api-calls-in-minimal-api.html
+
+      Creating and Using HTTP Client SDKs in .NET 6
+      https://www.infoq.com/articles/creating-http-sdks-dotnet-6/
+
+  LINQ
+
+      Work with Language-Integrated Query (LINQ)
+      https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/working-with-linq
