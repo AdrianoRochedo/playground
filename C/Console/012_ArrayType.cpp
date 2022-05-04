@@ -176,7 +176,7 @@ void ArrayWithVector()
     std::vector<int> foo = { 25,15,5,-5,-15 };
     std::vector<int> bar(foo.size());
 
-    // copy only positive numbers:
+    // copy only negative numbers
     auto it = std::copy_if(foo.begin(), foo.end(), bar.begin(), [](int i) {return i < 0; });
     
     // shrink container to new size
