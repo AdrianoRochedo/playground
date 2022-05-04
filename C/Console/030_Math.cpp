@@ -21,6 +21,8 @@ void Math()
     std::cout << "floor(d) :"   << floor(d)  << std::endl;
     std::cout << "sqrt(f) :"    << sqrt(f)   << std::endl;
     std::cout << "pow( d, 2) :" << pow(d, 2) << std::endl;
+
+    std::cout << std::endl;
 }
 
 void Random()
@@ -39,4 +41,6 @@ void Random()
         j = rand();
         std::cout << " Random Number : " << j << std::endl;
     }
+
+    std::cout << std::endl;
 }
