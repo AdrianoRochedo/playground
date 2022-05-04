@@ -5,3 +5,4 @@ void PassArray();
 void ArrayWithEnums();
 void ArraySize();
 void ArraySort();
+void ArrayWithVector();

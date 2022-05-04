@@ -1,9 +1,9 @@
 #include <iomanip>
 using std::setw;
 
-#include <iterator> // for std::size
+#include <iterator>  // for std::size
 #include <algorithm> // for std::sort
-
+#include <vector>    // for std::vector
 #include <iostream>
 using namespace std;
 
@@ -165,4 +165,30 @@ void ArraySort()
         std::cout << array[i] << ' ';
 
     cout << endl << endl;
+}
+
+// =======================================================================
+
+void ArrayWithVector()
+{
+    Title("ArrayWith: std::vector, std::copy_if, lambda e for(each)");
+
+    std::vector<int> foo = { 25,15,5,-5,-15 };
+    std::vector<int> bar(foo.size());
+
+    // copy only positive numbers:
+    auto it = std::copy_if(foo.begin(), foo.end(), bar.begin(), [](int i) {return i < 0; });
+    
+    // shrink container to new size
+    bar.resize(std::distance(bar.begin(), it));  
+
+    std::cout << "foo contains:";
+    for (int x : foo) std::cout << ' ' << x;
+    cout << endl;
+
+    std::cout << "bar contains:";
+    for (int x : bar) std::cout << ' ' << x;
+    cout << endl;
+
+    cout << endl;
 }

@@ -20,6 +20,7 @@ int main()
     ArrayWithEnums();
     ArraySize();
     ArraySort();
+    ArrayWithVector();
 
     //Files();
     
