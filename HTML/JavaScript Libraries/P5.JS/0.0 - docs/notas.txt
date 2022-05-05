@@ -1,9 +1,16 @@
 ﻿DOCS
 
+    Main
+    https://github.com/CodingTrain    
+
     P5.js
-    https://p5js.org/
 
-    exemplos
-    https://github.com/CodingTrain/website/blob/main/beginners/p5js
+        site
+        https://p5js.org/
 
+        iniciante
+        https://github.com/CodingTrain/website/blob/main/beginners/p5js
+
+    Working with Data and APIs in JavaScript
+    https://github.com/CodingTrain/Intro-to-Data-APIs-JS
 
