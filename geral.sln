@@ -23,7 +23,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Python", "Python", "{138C5A
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Console", "python\Console\Console.pyproj", "{ADCD8D11-4B58-488E-B387-61CE24ED22B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "C#\WebAPI\WebAPI.csproj", "{4FD4B98C-7590-4A6C-9215-176ABCA17760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "C#\WebAPI\WebAPI.csproj", "{4FD4B98C-7590-4A6C-9215-176ABCA17760}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML", "HTML", "{CB91688F-CE0D-4F80-A229-EBB4404DA9C9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JavaScript Libraries", "HTML\JavaScript Libraries\", "{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56316"
+		Debug.AspNetCompiler.PhysicalPath = "HTML\JavaScript Libraries\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56316\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56316"
+		Release.AspNetCompiler.PhysicalPath = "HTML\JavaScript Libraries\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56316\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56316"
+		SlnRelativePath = "HTML\JavaScript Libraries\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +136,18 @@ Global
 		{4FD4B98C-7590-4A6C-9215-176ABCA17760}.Release|x64.Build.0 = Release|Any CPU
 		{4FD4B98C-7590-4A6C-9215-176ABCA17760}.Release|x86.ActiveCfg = Release|Any CPU
 		{4FD4B98C-7590-4A6C-9215-176ABCA17760}.Release|x86.Build.0 = Release|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|x64.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|x64.Build.0 = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|x86.ActiveCfg = Debug|Any CPU
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +160,7 @@ Global
 		{6B21AADB-3D1F-49CC-AE7D-F46EB0840B37} = {A805A7D6-3424-4A45-9B2C-9563DCA17B3E}
 		{ADCD8D11-4B58-488E-B387-61CE24ED22B4} = {138C5A0D-5F10-4CEA-9E55-6D58A8C05FDD}
 		{4FD4B98C-7590-4A6C-9215-176ABCA17760} = {7C15DD65-314B-45E4-96C2-B13DAD7FCAC9}
+		{9C43F014-8C9F-4461-A62E-C2C62EA7C12B} = {CB91688F-CE0D-4F80-A229-EBB4404DA9C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1261CE14-959C-4117-9C88-F0CB1185CD01}
