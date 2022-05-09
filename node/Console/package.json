@@ -1,9 +1,0 @@
-{
-  "name": "console",
-  "version": "0.0.0",
-  "description": "Console",
-  "main": "app.js",
-  "author": {
-    "name": ""
-  }
-}
