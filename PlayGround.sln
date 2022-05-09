@@ -29,7 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML", "HTML", "{CB91688F-C
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JavaScript Libraries", "HTML\JavaScript Libraries\", "{9C43F014-8C9F-4461-A62E-C2C62EA7C12B}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56316"
 		Debug.AspNetCompiler.PhysicalPath = "HTML\JavaScript Libraries\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56316\"
