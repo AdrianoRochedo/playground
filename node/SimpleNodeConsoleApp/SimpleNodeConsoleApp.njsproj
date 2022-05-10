@@ -28,11 +28,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="assets\conteudo.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\events.js" />
     <Content Include="src\utils.js" />
     <Content Include="src\app.js" />
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\" />
     <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
