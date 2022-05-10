@@ -39,3 +39,17 @@ exports.retornarPessoas = () =>
     // access elements
     return jsonParsed
 };
+
+exports.retornarUmaPessoa = () =>
+{
+    var pessoa =
+    {
+        name: 'John Doe',
+        emai: 'john.doe@example.com',
+        age: 27,
+        gender: 'Male',
+        profession: 'Software Developer'
+    };
+
+    return pessoa;
+};
