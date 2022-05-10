@@ -5,7 +5,7 @@ console.log("Ola, Adriano");
 
 utils.teste();
 
-//utils.lerArquivo();
+utils.lerArquivo();
 
 var pessoas = utils.retornarPessoas();
 console.log(pessoas);

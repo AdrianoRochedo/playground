@@ -4,7 +4,7 @@ exports.keyPress = () =>
     var rl = require("readline");
     var prompts = rl.createInterface(process.stdin, process.stdout);
     prompts.question("Precione qualquer tecla para finalizar", function (conteudo)
-    {
+    {        
         process.exit();
     });
 };
@@ -22,7 +22,10 @@ exports.lerArquivo = () =>
         if (err)
             console.error(err);
         else
-            console.log(data);            
+        {
+            console.log();
+            console.log(data.toString('utf8'));
+        }
     });
 };
 
