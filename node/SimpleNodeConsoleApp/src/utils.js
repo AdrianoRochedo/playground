@@ -17,16 +17,16 @@ exports.teste = () =>
 exports.lerArquivo = () =>
 {
     var fs = require('fs');
-    fs.readFile('assets/conteudo.txt', function (err, data)
+    try
     {
-        if (err)
-            console.error(err);
-        else
-        {
-            console.log();
-            console.log(data.toString('utf8'));
-        }
-    });
+        var data = fs.readFileSync('assets/conteudo.txt');
+        console.log();
+        console.log(data.toString('utf8'));
+    }
+    catch (err)
+    {
+        console.error(err);
+    };
 };
 
 exports.retornarPessoas = () =>
