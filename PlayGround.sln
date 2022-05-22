@@ -56,6 +56,11 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SimpleNodeWebApp", "node\Si
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SimpleNodeConsoleApp", "node\SimpleNodeConsoleApp\SimpleNodeConsoleApp.njsproj", "{A92800F9-A381-40E8-B568-CF239B48ED4D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{DB759259-EB20-4B6E-B82B-A56349F652DD}"
+	ProjectSection(SolutionItems) = preProject
+		python\Docs\Beginner's Python Cheat Sheet.pdf = python\Docs\Beginner's Python Cheat Sheet.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +202,7 @@ Global
 		{607E672C-DC17-4E48-BF5E-F098C706FC93} = {32592AA1-1A02-45BB-A130-18C5E67EAB61}
 		{F0C180E7-8BF8-46CB-95A1-E5981CFC71CB} = {A805A7D6-3424-4A45-9B2C-9563DCA17B3E}
 		{A92800F9-A381-40E8-B568-CF239B48ED4D} = {A805A7D6-3424-4A45-9B2C-9563DCA17B3E}
+		{DB759259-EB20-4B6E-B82B-A56349F652DD} = {138C5A0D-5F10-4CEA-9E55-6D58A8C05FDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1261CE14-959C-4117-9C88-F0CB1185CD01}
