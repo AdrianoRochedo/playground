@@ -1,0 +1,10 @@
+Notas
+
+    https://www.sfml-dev.org/
+
+    Baseado na versao 64 bits
+
+    SFML Setup in Visual Studio
+
+        https://www.sfml-dev.org/tutorials/2.5/start-vc.php
+   
