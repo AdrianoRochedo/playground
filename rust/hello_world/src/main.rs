@@ -1,5 +1,3 @@
-use std::io::stdin;
-
 fn main() 
 {
     println!("Hello world from Rust");
@@ -9,9 +7,5 @@ fn main()
 fn readkey()
 {
     let mut buffer = String::new();
-    let x = stdin().read_line(&mut buffer);
-    if x.is_ok() 
-    {
-        // nada
-    } 
+    std::io::stdin().read_line(&mut buffer).expect("Failed to read line"); 
 }
