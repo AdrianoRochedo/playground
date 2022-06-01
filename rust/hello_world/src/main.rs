@@ -2,6 +2,8 @@
 use std::io;
 use rand::Rng;
 
+pub mod app;
+
 fn main() 
 {
     print!("\n");
@@ -9,6 +11,7 @@ fn main()
     //guess_the_number();
     common_programming_concepts();
     understanding_ownership();
+    structs();
 }
 
 // itens:
@@ -237,6 +240,21 @@ fn understanding_ownership()
     ownership();
     references_and_borrowing();
     the_slice_type();
+}
+
+fn structs()
+{
+    title("Structs");
+
+    use app::structs::*;
+
+    let s1 = MyStruct1
+    {
+        bool_field: true,
+        int_field: 49,
+    };
+
+    println!("{:?}", s1);
 }
 
 fn title(s: &str)
