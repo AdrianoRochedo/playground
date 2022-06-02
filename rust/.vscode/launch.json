@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/<your program>",
+            "program": "C:/GitHub/rochedo/playground/rust/hello_world/target/debug/hello_world.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
