@@ -1,0 +1,40 @@
+﻿@using System.Diagnostics
+
+<h3>Enter seu nome:</h3>
+
+<EditForm Model="@Model" OnValidSubmit="HandleValidSubmit">
+    Primeiro nome:
+    <InputText  @bind-Value="Model!.FirstName" /><br/>
+    
+    Último nome:
+    <InputText  @bind-Value="Model!.LastName" /><br/>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <br/>
+    <br/>
+</EditForm>
+
+@code 
+{
+    // https://tutorialslink.com/Articles/How-to-create-Blazor-Model-Classes--Blazor-Tutorials/1875
+    // https://www.pragimtech.com/blog/blazor/building-blazor-form/
+    // https://www.pragimtech.com/blog/blazor/validating-complex-models-in-blazor/
+
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+    
+    private Blazor_Server.Models.Person Model { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        Debug.WriteLine(GetType().Name + " - OnInitialized");
+    }
+
+    protected async Task HandleValidSubmit()
+    {
+        Debug.WriteLine(Model.FirstName);
+        Debug.WriteLine(Model.LastName);
+
+        //NavigationManager.NavigateTo("/");
+    }
+}

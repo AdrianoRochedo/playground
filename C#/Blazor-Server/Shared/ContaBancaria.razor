@@ -1,0 +1,40 @@
+﻿@using System.Diagnostics
+
+<h3>Enter os dados da conta:</h3>
+
+<EditForm Model="@Model" OnValidSubmit="HandleValidSubmit">
+    Banco:
+    <InputText @bind-Value="Model.Banco" /><br/>
+
+    Agencia:
+    <InputText @bind-Value="Model.Agencia" /><br/>
+
+    Conta:
+    <InputText @bind-Value="Model.Conta" /><br/>
+    
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <br/>
+    <br/>
+</EditForm>
+
+@code 
+{
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+        
+    private Blazor_Server.Models.ContaBancaria Model { get; set; } = new();
+    
+    protected override void OnInitialized()
+    {
+        Debug.WriteLine(GetType().Name + " - OnInitialized");
+    }
+
+    protected async Task HandleValidSubmit()
+    {
+        Debug.WriteLine(Model.Banco);
+        Debug.WriteLine(Model.Agencia);
+        Debug.WriteLine(Model.Conta);
+
+        //NavigationManager.NavigateTo("/");
+    }
+}

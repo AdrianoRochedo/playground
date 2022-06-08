@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 using Blazor_MudBlazor;
 
 using Microsoft.AspNetCore.Components.Web;
@@ -13,3 +15,5 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddMudServices();
 
 await builder.Build().RunAsync();
+
+Debug.WriteLine("teste");
