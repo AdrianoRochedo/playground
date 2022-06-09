@@ -11,33 +11,3 @@
 {
     @renderWidget(widgetType)
 }
-
-@code 
-{
-    // https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio
-    // https://jonhilton.net/blazor-dynamic-components/
-    
-    readonly List<Type> _widgets = new()
-    {
-        typeof(Person),
-        typeof(ContaBancaria),
-    };
-
-    private RenderFragment renderWidget(Type t) => builder =>
-    {
-        builder.OpenComponent(0, t);
-        builder.CloseComponent();
-    };
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-        Debug.WriteLine("OnInitialized");
-    }
-
-    protected override void OnParametersSet()
-    {
-        base.OnParametersSet();
-        Debug.WriteLine("OnParametersSet");
-    }    
-}
