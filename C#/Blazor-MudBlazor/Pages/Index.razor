@@ -11,3 +11,18 @@
         <b>www.mudblazor.com</b>
     </MudLink>
 </MudAlert>
+
+<div style="display:block">
+    <MudButton>
+        <MudIcon Icon="@Icons.Filled.Star" Size="Size.Small" Color="@GetIconColor()"/>
+    </MudButton>
+</div>
+
+@code
+{
+    Color GetIconColor()
+    {
+        Color c = (DateTime.Now.Second > 30 ? Color.Warning : Color.Info);
+        return c;
+    }
+}
