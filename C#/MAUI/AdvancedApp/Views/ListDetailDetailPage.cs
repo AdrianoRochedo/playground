@@ -10,11 +10,13 @@ public partial class ListDetailDetailPage : ContentPage
         {
             Content = new VerticalStackLayout
             {
-                Children = {
+                Children = 
+                {
                     new Label().FontSize(20).Bind(Label.TextProperty, "Item.Title"),
                     new Label().Bind(Label.TextProperty, "Item.Description"),
-                    }
-            }.Margin(12),
+                }
+            }
+            .Margin(12),
         };
 
     }

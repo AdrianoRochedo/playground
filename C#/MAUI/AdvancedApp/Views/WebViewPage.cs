@@ -16,6 +16,7 @@ public partial class WebViewPage : ContentPage
                 new WebView().Assign(out WebView webView)
                              .Bind(WebView.SourceProperty, nameof(WebViewViewModel.Source))
                              .Bind(WebView.NavigationProperty, nameof(WebViewViewModel.WebViewNavigatedCommand)),
+
                 new HorizontalStackLayout
                 {
                     Spacing = 12,
@@ -24,16 +25,20 @@ public partial class WebViewPage : ContentPage
                         new Button().Text("Back")
                                      .Bind(Button.IsEnabledProperty, WebView.CanGoBackProperty.PropertyName, source: webView)
                                      .BindCommand(nameof(WebViewViewModel.NavigateBackCommand), parameterSource: webView),
+
                         new Button().Text("Forward")
                                     .Bind(Button.IsEnabledProperty, WebView.CanGoForwardProperty.PropertyName, source: webView)
                                     .BindCommand(nameof(WebViewViewModel.NavigateForwardCommand), parameterSource: webView),
+
                         new Button().Text("Refresh")
                                     .BindCommand(nameof(WebViewViewModel.RefreshPageCommand), parameterSource: webView),
+
                         new Button().Text("Open in browser")
                                     .BindCommand(nameof(WebViewViewModel.OpenInBrowserCommand)),
                     },
-                }.CenterHorizontal()
-                 .Row(1),
+                }
+                .CenterHorizontal()
+                .Row(1),
             },
         };
     }
